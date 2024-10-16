@@ -1,4 +1,5 @@
 Trabajo realizado por: Lina Muñoz 202310172 y 
+
 Al interior del comprimido se encuentran estas 4 cosas:
 1. Ejercicios: Carpeta con 4 archivos .java cada uno con el programa para resolver los 4 problemas.
 2. data: Archivos .txt que reprensentan los casos de prueba que entran por parametro al correr los ejercicios.
