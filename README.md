@@ -1,7 +1,7 @@
 Trabajo realizado por: Lina Muñoz 202310172 y 
 
 Al interior del comprimido se encuentran estas 4 cosas:
-1. Ejercicios: Carpeta con 4 archivos .java cada uno con el programa para resolver los 4 problemas.
+1. Ejercicios: Carpeta con 4 archivos .java cada uno con el programa para resolver los 4 problemas
 2. data: Archivos .txt que reprensentan los casos de prueba que entran por parametro al correr los ejercicios.
 3. Informe: Archivo .pdf con el análisis de tiempos para la parte 1
 4. README
@@ -9,8 +9,14 @@ Al interior del comprimido se encuentran estas 4 cosas:
 Para probar cada uno de los programas es necesario tener en cuenta las siguientes cosas:
 
 1. Ejercicio 1:
+   
+Para este ejercicio si se corre desde la terminal se debe de compilar la clase PrimerPunto.java, junto a la ejecución.
 
-2. Ejercicio 2: BFS para encontrar componentes conectados.
+Entradas: Tiene 2, la primera es la ruta del archivo y la segunda es el algoritmo a ejecutar. Para este ultimo, 1 es dijkstra, el 2 es Bellmand-ford y 3 si se quiere floyd Warshall.
+
+Su salida es una matriz de lista de adyacencias donde se ve el peso de camino minimo para llegar desde cada nodo a los otros. 
+
+3. Ejercicio 2: BFS para encontrar componentes conectados.
 
 Para probar este programa es necesario correr el archivo Eje2.java, el main requiere un argumento: args[0]: ruta del archivo con el caso.
 
