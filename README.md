@@ -1,4 +1,4 @@
-Trabajo realizado por: Lina Muñoz 202310172 y 
+Trabajo realizado por: Lina Muñoz 202310172 y Ximena Lopez 202312848
 
 Al interior del comprimido se encuentran estas 4 cosas:
 1. Ejercicios: Carpeta con 4 archivos .java cada uno con el programa para resolver los 4 problemas
