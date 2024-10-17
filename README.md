@@ -10,7 +10,7 @@ Para probar cada uno de los programas es necesario tener en cuenta las siguiente
 
 1. Ejercicio 1:
    
-Para este ejercicio si se corre desde la terminal se debe de compilar la clase PrimerPunto.java, junto a la ejecución.
+Para este ejercicio si se corre desde la terminal se debe de compilar la clase Eje1.java, junto a la ejecución.
 
 Entradas: Tiene 2, la primera es la ruta del archivo y la segunda es el algoritmo a ejecutar. Para este ultimo, 1 es dijkstra, el 2 es Bellmand-ford y 3 si se quiere floyd Warshall.
 
@@ -26,7 +26,7 @@ Salida: Por consola se imprime el grafo ingresado, y los componentes conectados 
 
 3. Ejercicio 3:
 
-Para probar este ejercicio es necesario correr el archivo TercerPunto.java, y su ejecución que requiere un argumento, el cual es la ruta del archivo. 
+Para probar este ejercicio es necesario compilar el archivo Eje3.java, y su ejecución que requiere un argumento, el cual es la ruta del archivo. 
 
 Entradas: Un archivo txt que contiene 3 números los cuales son el primero un vértice, el segundo el otro vértice con el que conecta y finalmente el peso de esta arista.
 
