@@ -42,7 +42,9 @@ public class Eje2 {
 
        return visitados;
     }
-    
+
+
+    // Función que encuentras los compenentes conectados del grafo de entrada (lista de adyacencia).
     public static List<List<Integer>> encontrarComponentesConectadas(Map<Integer, List<Integer>> graph) {
         
         // Inicializo la respuesta
@@ -67,7 +69,7 @@ public class Eje2 {
     
     
 
-
+    //Main que convierte el archivo de entrada y ejecuta la funcion encontrarComponentesConectadas
     public static void main(String[] args) {
         if (args.length != 1) {
             System.out.println("Uso: java GrafoDesdeArchivo <ruta del archivo>");

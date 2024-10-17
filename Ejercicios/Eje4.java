@@ -1,14 +1,13 @@
 
 import java.io.*;
 import java.util.*;
-import java.util.LinkedList;
 
 class Eje4 {
 
- /* Devuelve verdadero si hay un camino desde la fuente 's' al sumidero 't' 
-    en el grafo residual. También llena parent[] para almacenar el camino */
+ // Funcion que devuelve verdadero si hay un camino desde la fuente 's' al sumidero 't' en el grafo residual. También llena parent[] para almacenar el camino
  public static boolean bfs(int rGraph[][], int s, int t, int parent[]) {
-     // Crear un arreglo de visitados y marcar todos los vértices como no visitados
+     
+    // Crear un arreglo de visitados y marcar todos los vértices como no visitados
 	 int V =rGraph.length;
      boolean visited[] = new boolean[V];
      for (int i = 0; i < V; ++i)
@@ -20,8 +19,7 @@ class Eje4 {
      visited[s] = true;
      parent[s] = -1;
 
-     // Bucle estándar de BFS
-     while (queue.size() != 0) {
+     while (!queue.isEmpty()) {
          int u = queue.poll();
 
          for (int v = 0; v < V; v++) {
@@ -46,7 +44,8 @@ class Eje4 {
  }
 
  // Devuelve el flujo máximo desde s hasta t en el grafo dado
- public static int fordFulkerson(int graph[][], int s, int t) {
+ // Implementación basada en pseudocodigo de Barcelona Geeks
+ public static int flujoMax(int graph[][], int s, int t) {
 	 int V =graph.length;
 	 int u, v;
 
@@ -89,7 +88,7 @@ class Eje4 {
      return max_flow;
  }
  
- //Modifica el grafo de entrada para que tenga una fuente y un sumidero.
+ //Modifica el grafo de entrada para que tenga una super fuente y un super sumidero, para s fuentes y t sumideros.
  public static int [][] modificarGrafo (int graph[][], int s, int t){
 	
 	 //Inicializa el nuevo grafo con 2 vertices más
@@ -115,15 +114,17 @@ class Eje4 {
 	 
  }
  
+ //Función prinipal que recibe el grafo de entrada, con la cantidad de fabricas (Ns) y cantidad de librerias (Nt).
  public static int LibrosMaximos(int graph[][], int Ns, int Nt) {
 	 
 	 int [][] newGraph = modificarGrafo(graph, Ns, Nt);
 	 
-	 return fordFulkerson(newGraph,0,newGraph.length-1);
+	 return flujoMax(newGraph,0,newGraph.length-1);
 	 
  }
-		 
- public static void main(String[] args) {
+	
+ //Main que convierte el archivo de entrada y ejecuta la funcion LibrosMaximos
+  public static void main(String[] args) {
 
      if (args.length < 1) {
          System.out.println("Por favor, proporciona el nombre del archivo como argumento.");
