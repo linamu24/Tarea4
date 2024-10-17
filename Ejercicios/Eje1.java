@@ -11,10 +11,10 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Set;
 
-public class PrimerPunto {
+public class Eje1 {
     private Map<Integer, List<Tupla>> grafo;
     private List<List<Integer>> caminosMinimos;
-    public PrimerPunto(){
+    public Eje1(){
         grafo = new HashMap<>();
         caminosMinimos = new ArrayList<>();
     }
@@ -58,7 +58,7 @@ public class PrimerPunto {
         
         //String rutaArchivo = "data/distances5.txt";
         
-        PrimerPunto primerPunto = new PrimerPunto();
+        Eje1 primerPunto = new Eje1();
 
         primerPunto.leerArchivo(rutaArchivo);
         long tiempoInicio = 0, tiempoFin = 0;
