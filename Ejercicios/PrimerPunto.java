@@ -61,20 +61,39 @@ public class PrimerPunto {
         PrimerPunto primerPunto = new PrimerPunto();
 
         primerPunto.leerArchivo(rutaArchivo);
-
+        long tiempoInicio = 0, tiempoFin = 0;
         String algoritmo = args[1];
         if ("1".equals(algoritmo)){
+            tiempoInicio = System.nanoTime();
             primerPunto.dijkstra();
             primerPunto.mostrarCaminosMinimos();
+            tiempoFin = System.nanoTime();
+            long tiempoTotal = tiempoFin - tiempoInicio;
+            // Convertir el tiempo a milisegundos
+            double tiempoMilisegundos = tiempoTotal / 1_000_000.0;
+
+            System.out.println(tiempoMilisegundos);
 
         }
         else if ("2".equals(algoritmo)){
+            tiempoInicio = System.nanoTime();
             primerPunto.bellmanFord(); 
             primerPunto.mostrarCaminosMinimos();
+            tiempoFin = System.nanoTime();
+            long tiempoTotal = tiempoFin - tiempoInicio;
+            // Convertir el tiempo a milisegundos
+            double tiempoMilisegundos = tiempoTotal / 1_000_000.0;
+            System.out.println(tiempoMilisegundos);
 
         }
         else if ("3".equals(algoritmo)){
+            tiempoInicio = System.nanoTime();
             primerPunto.floydWarschall();
+            tiempoFin = System.nanoTime();
+            long tiempoTotal = tiempoFin - tiempoInicio;
+            // Convertir el tiempo a milisegundos
+            double tiempoMilisegundos = tiempoTotal / 1_000_000.0;
+            System.out.println(tiempoMilisegundos);
         }
 
     }
