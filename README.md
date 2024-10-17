@@ -26,7 +26,7 @@ Salida: Por consola se imprime el grafo ingresado, y los componentes conectados 
 
 3. Ejercicio 3:
 
-Para probar este ejercicio es necesario correr el archivo SegundoPunto.java, y su ejecución que requiere un argumento, el cual es la ruta del archivo. 
+Para probar este ejercicio es necesario correr el archivo TercerPunto.java, y su ejecución que requiere un argumento, el cual es la ruta del archivo. 
 
 Entradas: Un archivo txt que contiene 3 números los cuales son el primero un vértice, el segundo el otro vértice con el que conecta y finalmente el peso de esta arista.
 
