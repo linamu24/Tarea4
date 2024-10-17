@@ -26,7 +26,14 @@ Salida: Por consola se imprime el grafo ingresado, y los componentes conectados 
 
 3. Ejercicio 3:
 
-4. Ejercicio 4: Libros que se pueden transportar como máximo en un dia desde las fábricas hasta las librerías.
+Para probar este ejercicio es necesario correr el archivo SegundoPunto.java, y su ejecución que requiere un argumento, el cual es la ruta del archivo. 
+
+Entradas: Un archivo txt que contiene 3 números los cuales son el primero un vértice, el segundo el otro vértice con el que conecta y finalmente el peso de esta arista.
+
+Salida, la salida son las aristas que entran para el recubrimiento mínimo y el costo total mínimo que tiene. 
+
+
+5. Ejercicio 4: Libros que se pueden transportar como máximo en un dia desde las fábricas hasta las librerías.
 
 Para probar este programa es necesario correr el archivo Eje4.java, el main requiere un argumento: args[0]: ruta del archivo con el caso.
 
